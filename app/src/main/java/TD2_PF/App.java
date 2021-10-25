@@ -5,27 +5,29 @@ package TD2_PF;
 
 public class App {
 
+    public static void QST1(){
+
     // Somme des 2 entiers
     Somme<Integer> integerSomme=(var1, var2)-> var1 + var2;
-    //System.out.println(integerSomme.somme(20,20);
+    System.out.println(integerSomme.somme(20,20));
 
     // Somme des 2 doubles
 
     Somme<Double> doubleSomme=((var1, var2) -> var1+var2);
-    //System.out.println(doubleSomme.somme(20.0,20.0);
+    System.out.println(doubleSomme.somme(20.0,20.0));
 
     // Somme des 2 longs
 
     Somme<Long> longSomme=(var1,var2) -> (var1+var2);
-    //System.out.println(longSomme.somme(1L,1L);
+    System.out.println(longSomme.somme(1L,1L));
 
     // Somme des 2 Strings
 
     Somme<String> stringSomme=(var1, var2) -> (var1+var2);
-    //System.out.println(stringSomme.somme("un","deux");
+    System.out.println(stringSomme.somme("un","deux"));
 
 
-
+    }
 
 
 }
