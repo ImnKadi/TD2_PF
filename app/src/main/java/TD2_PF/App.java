@@ -5,6 +5,7 @@ package TD2_PF;
 
 import java.util.List;
 import java.util.Map;
+import java.util.function.Predicate;
 
 public class App {
 
@@ -41,6 +42,23 @@ public class App {
         System.out.println("Predicate est de type booléen teste un argument et renvoie vrai ou faux. Elle est du type T");
         System.out.println("Consumer consomme une entrée et ne retourne rien. Consumer est de type T");
         System.out.println("Supplier génère une sortie retourne une valeur et ne retourne pas d'argument. Elle est de type T");
+    }
+
+
+    public static void EXO2QST1(){
+
+        Predicate<Integer> tropPetit = taille -> taille <100;
+        Predicate<Integer> tropGrand = taille -> taille >200;
+        Predicate<Integer> TailleIncorrecte = tropPetit.or(tropGrand);
+        Predicate<Integer> TailleCorrecte = TailleIncorrecte.negate();
+        Predicate<Double> tropLourd = poids -> poids > 150.0;
+        Predicate<Double> PoidsIncorrecte = tropLourd;
+        Predicate<Double> PoidsCorrecte = tropLourd.negate();
+
+
+
+
+
     }
 
 
