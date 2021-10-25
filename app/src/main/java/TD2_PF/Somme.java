@@ -9,7 +9,7 @@ public interface Somme<T> {
     Somme<Integer> sommeInt = new Somme<Integer>() {
         @Override
         public Integer somme(Integer var1, Integer var2) {
-            return null;
+            return var1 + var2;
         }
     };
 
