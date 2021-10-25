@@ -3,30 +3,44 @@
  */
 package TD2_PF;
 
+import java.util.List;
+import java.util.Map;
+
 public class App {
 
     public static void QST1(){
 
-    // Somme des 2 entiers
-    Somme<Integer> integerSomme=(var1, var2)-> var1 + var2;
-    System.out.println(integerSomme.somme(20,20));
+        System.out.print("Somme et Sommable");
+        // Somme des 2 entiers
+        Somme<Integer> integerSomme=(var1, var2)-> var1 + var2;
+        System.out.println(integerSomme.somme(20,20));
 
-    // Somme des 2 doubles
+        // Somme des 2 doubles
+        Somme<Double> doubleSomme=((var1, var2) -> var1+var2);
+        System.out.println(doubleSomme.somme(20.0,20.0));
+        // Somme des 2 longs
 
-    Somme<Double> doubleSomme=((var1, var2) -> var1+var2);
-    System.out.println(doubleSomme.somme(20.0,20.0));
+        Somme<Long> longSomme=(var1,var2) -> (var1+var2);
+        System.out.println(longSomme.somme(1L,1L));
 
-    // Somme des 2 longs
+        // Somme des 2 Strings
 
-    Somme<Long> longSomme=(var1,var2) -> (var1+var2);
-    System.out.println(longSomme.somme(1L,1L));
+        Somme<String> stringSomme=(var1, var2) -> (var1+var2);
+        System.out.println(stringSomme.somme("un","deux"));
+    }
 
-    // Somme des 2 Strings
+    public static void QST2(){
 
-    Somme<String> stringSomme=(var1, var2) -> (var1+var2);
-    System.out.println(stringSomme.somme("un","deux"));
+        final List<String> l2s = List.of("Un", "deux");
+        final Map<String, Integer> m2s =  Map.of("e1", 1, "e2", 2);
+    }
 
+    public static void QST3(){
 
+        System.out.println("Function convertit un type en un autre type et prend en argument type T");
+        System.out.println("Predicate est de type booléen teste un argument et renvoie vrai ou faux. Elle est du type T");
+        System.out.println("Consumer consomme une entrée et ne retourne rien. Consumer est de type T");
+        System.out.println("Supplier génère une sortie retourne une valeur et ne retourne pas d'argument. Elle est de type T");
     }
 
 
