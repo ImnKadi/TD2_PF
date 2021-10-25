@@ -73,6 +73,20 @@ public class App {
         }
     }
 
+    public static <T> Predicate<T> conjonction(List<Predicate<T>> conditions){
+        Predicate<T> predicate = x -> true;
+
+
+        return  null;
+
+    }
+
+    // Non finie
+    public static <T> List<T> filtragePredicatif(List<Predicate<T>> conditions, List<T> elements){
+
+        return elements;
+    }
+
 
 
 
