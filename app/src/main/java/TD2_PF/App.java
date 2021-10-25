@@ -5,4 +5,21 @@ package TD2_PF;
 
 public class App {
 
+    // Somme des 2 entiers
+    Somme<Integer> integerSomme=(var1, var2)-> var1 + var2;
+    //System.out.println(integerSomme.somme(20,20);
+
+    // Somme des 2 doubles
+
+    Somme<Double> doubleSomme=((var1, var2) -> var1+var2);
+    //System.out.println(doubleSomme.somme(20,20);
+
+    // Somme des 2 longs
+
+    Somme<Long> longSomme=(var1,var2) -> (var1+var2);
+    //System.out.println(longSomme.somme(20,20);
+
+
+
+
 }
